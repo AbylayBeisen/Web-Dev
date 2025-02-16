@@ -1,23 +1,21 @@
 import {Component} from '@angular/core';
-import {HomeComponent} from './home/home.component';
-import {RouterLink, RouterOutlet} from '@angular/router';
+import { ProductsComponent } from './products/products.component';
+
 @Component({
   selector: 'app-root',
-  imports: [ RouterLink, RouterOutlet],
+  imports: [ProductsComponent],
   template: `
     <main>
-      <a [routerLink]="['/']">
+      <a >
         <header class="brand-name">
-          <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true" />
         </header>
       </a>
       <section class="content">
-        <router-outlet></router-outlet>
+        <app-home></app-home>
       </section>
     </main>
   `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'homes';
-}
+  title = 'myapp';}
