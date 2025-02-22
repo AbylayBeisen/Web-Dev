@@ -1,0 +1,6 @@
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: 150px;
+  background-color: #E61E27;
+}
